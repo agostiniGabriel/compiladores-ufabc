@@ -1,0 +1,13 @@
+Identificadores:
+    (a..z) (A..Z|0..9|a..z)*
+Números:
+    (0..9)+
+Pontuação:
+    ;
+OP_REL:
+    > | >= | < | <= | == | !=
+OP_ATR:
+    =
+Legenda:
+    a..z -> Intervalo início em a fim em z
+    * -> n repetições
