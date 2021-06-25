@@ -1,0 +1,17 @@
+Gramática G
+
+G = (Vn, Vt, P, S)
+
+Vn = E, T, OP
+Vt = ID, NUM, +, -, *, /
+
+1. E -> E OP T | T
+2. T -> ID | NUM
+3. OP -> + | - | * | /
+
+** Regra 1 com recursividade a esquerda, reescrevendo para remover a recursividade:
+
+1A. E -> T E'
+1B. E' -> OP T E' | &
+2. T -> ID | NUM
+3. OP -> + | - | * | /
